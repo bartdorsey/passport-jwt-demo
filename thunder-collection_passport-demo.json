@@ -1,0 +1,54 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "passport-demo",
+  "dateExported": "2022-03-04T17:14:56.399Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "containerId": "",
+      "sortNum": 10000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        }
+      ],
+      "colId": "64a5ea6c-adf3-4f58-8df9-ad999cdaa882",
+      "name": "POST /api/auth",
+      "url": "http://localhost:4000/api/auth",
+      "method": "POST",
+      "modified": "2022-03-04T16:42:10.308Z",
+      "created": "2022-03-03T14:39:07.442Z",
+      "_id": "a40de616-1b0c-4919-b948-5a0961e3058f",
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"username\": \"cody\",\n    \"password\": \"123\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "containerId": "",
+      "sortNum": 20000,
+      "headers": [
+        { "name": "Accept", "value": "*/*" },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)"
+        }
+      ],
+      "colId": "64a5ea6c-adf3-4f58-8df9-ad999cdaa882",
+      "name": "GET /api/users",
+      "url": "http://localhost:4000/api/users",
+      "method": "GET",
+      "modified": "2022-03-04T15:43:29.234Z",
+      "created": "2022-03-04T15:43:21.193Z",
+      "_id": "14271ffc-3f49-4b78-af4c-15be1d24a0d9",
+      "params": [],
+      "tests": []
+    }
+  ]
+}

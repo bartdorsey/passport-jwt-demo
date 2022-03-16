@@ -3,12 +3,34 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.26.0",
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.3",
+    "dotenv": "^16.0.0",
+    "express-session": "^1.17.2",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.2",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "per-env": "^1.0.2",
+    "pg": "^8.7.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0"
+    "react-scripts": "5.0.0",
+    "sequelize": "^6.17.0",
+    "sequelize-pretty-logger": "^1.0.2",
+    "serialize-error": "^9.1.0",
+    "supports-color": "^9.2.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "per-env",
+    "start:production": "node server",
+    "start:development": "concurrently -c cyan,yellow \"npm:start-server\" \"npm:start-react\"",
+    "start-server": "nodemon server",
+    "start-react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -27,5 +49,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "proxy": "http://localhost:4000"
 }
